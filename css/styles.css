@@ -39,6 +39,10 @@ nav.menu-mobile > * {
   margin: 20px;
 }
 
+.image {
+  width: 100%;
+}
+
 .menu-mobile {
   display: flex;
   flex-direction: row;
@@ -49,6 +53,14 @@ nav.menu-mobile > * {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.main-header {
+  background-color: #ed93ab;
+  background-image: url(/images/work/media/media03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

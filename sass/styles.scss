@@ -1,5 +1,5 @@
 $colorgreen: #15ffbc;
-$colorhover: pink;
+$colorhover: #ed93ab;
 
 @media (max-width: 600px) {
   .header-desktop__menu {
@@ -51,10 +51,24 @@ nav.menu-mobile > * {
   margin: 20px;
 }
 
+.image {
+  width: 100%;
+}
+
 .menu-mobile {
   @include flex(space-between);
 }
 
 .header__logo {
   @include flex(center);
+}
+
+// *MAIN*
+
+.main-header {
+  background-color: $colorhover;
+  background-image: url(/images/work/media/media03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
