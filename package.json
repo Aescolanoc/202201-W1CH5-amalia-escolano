@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "sass": "^1.49.0"
+  },
+  "name": "202201-w1ch5-amalia-escolano",
+  "description": "202201-W1CH4-amalia-escolano",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "husky": "^7.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sass:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aescolanoc/202201-W1CH5-amalia-escolano.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aescolanoc/202201-W1CH5-amalia-escolano/issues"
+  },
+  "homepage": "https://github.com/Aescolanoc/202201-W1CH5-amalia-escolano#readme"
+}
