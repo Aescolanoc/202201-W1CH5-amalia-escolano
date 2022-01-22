@@ -44,48 +44,74 @@
         </ul>
       </nav>
     </header>
-    <main class="main-content">
-      <div class="main-video">
+    <main class="main">
+      <!-- <div class="main-content__video"> 
+      <video
+        class="video-desktop"
+        src="./images/home/media/mp4.mp4"
+        autoplay
+        muted
+        loop
+      ></video> -->
+      <section class="main-video">
         <img src="./images/home/media/play.png" alt="Ver video" />
         <div class="main-video-text">
           <span>Lorem</span>
           <span>Lorem</span>
         </div>
-      </div>
-      <h2 class="main-content__title text-title">Lorem ipsum dolor sit</h2>
-      <p class="main-content__title__quote text-paragraph">
+      </section>
+      <h2 class="main-content__title text-title uppercase">
+        Lorem ipsum dolor sit
+      </h2>
+      <p class="main-content__title__quote text-paragraph uppercase">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna
       </p>
       <p class="text-center">x</p>
-      <div class="main-content__title-images">
+      <section class="main-content__title-images">
         <img
           src="./images/home/media/curl.png"
           alt="linea ondulada"
           class="main-content__title-images__separator"
         />
-        <h2 class="text-title">Lorem ipsum</h2>
-        <h3>dolor sit</h3>
-      </div>
-      <div class="main-content__imagegrid">
+        <h2 class="text-title uppercase">Lorem ipsum</h2>
+        <h3 class="uppercase">dolor sit</h3>
+      </section>
+      <section class="main-content__imagegrid">
         <div>
-          <div class="imagegrid__picture picture1"></div>
+          <div class="imagegrid__picture picture8"></div>
           <p class="text-center">Lorem ipsum dolor sit amet.</p>
         </div>
         <div>
-          <div class="imagegrid__picture picture2"></div>
+          <div class="imagegrid__picture picture9"></div>
           <p class="text-center">Lorem ipsum dolor sit amet, consectur</p>
         </div>
         <div>
-          <div class="imagegrid__picture picture3"></div>
+          <div class="imagegrid__picture picture10"></div>
           <p class="text-center">Lorem ipsum</p>
         </div>
-      </div>
+      </section>
     </main>
     <footer id="footer">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
+      <div class="footer__header">
+        <h2 class="footer header__text">
+          Lorem <del class="text--active">ipsum</del> dolor
+        </h2>
+        <p>x</p>
+      </div>
+      <ul class="footer__menu">
+        <li class="text--active color--hover"><del>Home</del></li>
+        <li>Works</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      <div class="footer__content">
+        <section class="footer__content1">
+          <h3>Lorem ipsum</h3>
+        </section>
+        <section class="footer__content2">content2</section>
+        <section class="footer__content3">content3</section>
+      </div>
     </footer>
   </body>
 </html>
