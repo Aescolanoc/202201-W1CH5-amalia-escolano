@@ -1,5 +1,6 @@
 $colorgreen: #15ffbc;
 $colorhover: #ed93ab;
+$colorfooter: #070c14;
 
 @mixin flex($direction: row, $justify: center) {
   display: flex;
@@ -13,6 +14,10 @@ $colorhover: #ed93ab;
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $colorgreen;
   font-family: "Open Sans", sans-serif;
@@ -23,7 +28,7 @@ header {
   height: 120px;
 }
 
-h1 {
+.title-panic {
   display: none;
 }
 
@@ -54,6 +59,7 @@ h1 {
 // *MAIN*
 
 .main-video {
+  margin-bottom: 30px;
   @include flex(column, center);
   align-items: center;
   background-color: $colorhover;
@@ -68,6 +74,75 @@ h1 {
 .main-video-text {
   @include flex(column, center);
   padding: 20px;
+}
+
+// *class generics to use*
+.text-title {
+  padding: 18px;
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.text-paragraph {
+  padding: 18px;
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 12px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.main-content__title-images h3 {
+  @extend .text-paragraph;
+  text-decoration: underline;
+  padding-top: 0px;
+}
+
+.main-content__title-images__separator {
+  padding-top: 50px;
+  width: 50px;
+  height: auto;
+}
+
+.main-content__title-images {
+  text-align: center;
+}
+
+.imagegrid__picture {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60vw;
+}
+
+.main-content__imagegrid {
+  p {
+    padding: 10px 20px;
+  }
+
+  > div {
+    margin-bottom: 60px;
+  }
+
+  .picture1 {
+    background-image: url("/images/home/media/media07.jpg");
+  }
+  .picture2 {
+    background-image: url("/images/home/media/media09.jpg");
+  }
+  .picture3 {
+    background-image: url("/images/home/media/media10.jpg");
+  }
+}
+
+footer {
+  background-color: $colorfooter;
 }
 
 // @media (max-width: 600px) {

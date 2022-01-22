@@ -12,22 +12,22 @@
     />
     <title>Home - Panic</title>
     <link rel="shortcut icon" href="./logo32.png" type="image/x-icon" />
-    <!-- <script
+    <script
       src="https://kit.fontawesome.com/6d85376087.js"
       crossorigin="anonymous"
-    ></script> -->
+    ></script>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <header>
       <nav class="menu-mobile">
-        <div class="menu-mobile__nav-menu burguer">
+        <a href="#footer" class="menu-mobile__nav-menu burguer">
           <i class="burger fas fa-bars"></i>
-        </div>
+        </a>
         <span class="menu-mobile__item">Qui</span>
       </nav>
-      <h1>Panic</h1>
+      <h1 class="title-panic">Panic</h1>
       <nav class="header">
         <ul class="header-desktop__menu">
           <li>Home</li>
@@ -44,7 +44,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main-content">
       <div class="main-video">
         <img src="./images/home/media/play.png" alt="Ver video" />
         <div class="main-video-text">
@@ -52,14 +52,40 @@
           <span>Lorem</span>
         </div>
       </div>
-      <div class="main-content">
-        <h2>LOREM IPSUM DOLOR SIT</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <h2 class="main-content__title text-title">Lorem ipsum dolor sit</h2>
+      <p class="main-content__title__quote text-paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna
+      </p>
+      <p class="text-center">x</p>
+      <div class="main-content__title-images">
+        <img
+          src="./images/home/media/curl.png"
+          alt="linea ondulada"
+          class="main-content__title-images__separator"
+        />
+        <h2 class="text-title">Lorem ipsum</h2>
+        <h3>dolor sit</h3>
       </div>
-      <div class="main-content"></div>
-      <div class="main-content"></div>
-      <div class="main-content"></div>
+      <div class="main-content__imagegrid">
+        <div>
+          <div class="imagegrid__picture picture1"></div>
+          <p class="text-center">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div>
+          <div class="imagegrid__picture picture2"></div>
+          <p class="text-center">Lorem ipsum dolor sit amet, consectur</p>
+        </div>
+        <div>
+          <div class="imagegrid__picture picture3"></div>
+          <p class="text-center">Lorem ipsum</p>
+        </div>
+      </div>
     </main>
-    <footer></footer>
+    <footer id="footer">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </footer>
   </body>
 </html>
