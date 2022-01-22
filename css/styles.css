@@ -1,3 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #15ffbc;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 2px;
+}
+
+header {
+  height: 120px;
+}
+
+.title-panic {
+  display: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.header .header-desktop__menu {
+  display: none;
+}
+
+.burguer,
+.menu-mobile__item {
+  margin: 20px 20px 2px 20px;
+}
+
+.menu-mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-video {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ed93ab;
+  background-image: url(/images/work/media/media03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vw;
+  color: #15ffbc;
+}
+
+.main-video-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.text-title {
+  padding: 18px;
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.text-paragraph, .main-content__title-images h3 {
+  padding: 18px;
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 12px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.main-content__title-images h3 {
+  text-decoration: underline;
+  padding-top: 0px;
+}
+
+.main-content__title-images__separator {
+  padding-top: 50px;
+  width: 50px;
+  height: auto;
+}
+
+.main-content__title-images {
+  text-align: center;
+}
+
+.imagegrid__picture {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60vw;
+}
+
+.main-content__imagegrid p {
+  padding: 10px 20px;
+}
+.main-content__imagegrid > div {
+  margin-bottom: 60px;
+}
+.main-content__imagegrid .picture1 {
+  background-image: url("/images/home/media/media07.jpg");
+}
+.main-content__imagegrid .picture2 {
+  background-image: url("/images/home/media/media09.jpg");
+}
+.main-content__imagegrid .picture3 {
+  background-image: url("/images/home/media/media10.jpg");
+}
+
+footer {
+  background-color: #070c14;
+}
 
 /*# sourceMappingURL=styles.css.map */
