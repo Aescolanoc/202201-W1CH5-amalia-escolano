@@ -156,3 +156,10 @@ footer {
 //     display: none;
 //   }
 // }
+
+// +++WORKS STYLE+++
+@for $i from 8 through 34 {
+  .works__picture#{$i} {
+    background-image: url("/images/work/media/media#{$i}.jpg");
+  }
+}
