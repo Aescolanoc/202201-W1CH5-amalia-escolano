@@ -12,10 +12,10 @@
     />
     <title>Home - Panic</title>
     <link rel="shortcut icon" href="./logo32.png" type="image/x-icon" />
-    <script
+    <!-- <script
       src="https://kit.fontawesome.com/6d85376087.js"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -28,12 +28,16 @@
         <span class="menu-mobile__item">Qui</span>
       </nav>
       <h1>Panic</h1>
-      <nav class="header-desktop">
+      <nav class="header">
         <ul class="header-desktop__menu">
           <li>Home</li>
           <li>Works</li>
         </ul>
-        <img src="./logo.png" alt="Logo" class="header__logo" />
+        <object
+          data="./images/home/media/media03.svg"
+          width="100"
+          class="header__logo"
+        ></object>
         <ul class="header-desktop__menu">
           <li>About</li>
           <li>Contact</li>
@@ -41,11 +45,13 @@
       </nav>
     </header>
     <main>
-      <header class="main-header">
+      <div class="main-video">
         <img src="./images/home/media/play.png" alt="Ver video" />
-        <span>Lorem</span>
-        <span>Lorem</span>
-      </header>
+        <div class="main-video-text">
+          <span>Lorem</span>
+          <span>Lorem</span>
+        </div>
+      </div>
       <div class="main-content">
         <h2>LOREM IPSUM DOLOR SIT</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
