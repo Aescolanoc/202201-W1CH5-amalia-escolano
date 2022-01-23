@@ -28,6 +28,10 @@ h1.title-panic {
   display: none;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -46,7 +50,12 @@ h1.title-panic {
 
 .menu-mobile {
   @include flex(row, space-between);
-  align-items: flex-start;
+
+  .burguer {
+    width: 32px;
+    height: auto;
+    margin: 5px 5px 0px;
+  }
 }
 
 .burguer,
@@ -94,6 +103,19 @@ h1.title-panic {
   line-height: 30px;
 }
 
+.text-title--small {
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 15px;
+}
+
+.text-paragraph-small {
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -106,7 +128,7 @@ h1.title-panic {
 .main-content__title-images {
   text-align: center;
 
-  h3 {
+  & > h3 {
     @extend .text-paragraph;
     text-decoration: underline;
     padding-top: 0px;
@@ -159,15 +181,19 @@ footer {
     line-height: 40px;
     margin-top: 20px;
     text-align: center;
+
+    & > p {
+      @extend .text-paragraph-small;
+    }
   }
 
   .paragraph-footer {
     color: $colorgreen;
-    font-size: 18px;
   }
 
   .text--active {
-    text-decoration: line-through $colorhover;
+    text-decoration: line-through solid $colorhover;
+    -webkit-text-decoration: line-through solid $colorhover;
   }
 
   .color--hover {
@@ -177,12 +203,34 @@ footer {
   .footer__menu-mobile {
     text-align: center;
     list-style-type: none;
-    margin-bottom: 20px;
+    margin: 20px 0px 40px 0px;
   }
-}
 
-.footer__content__section {
-  margin-bottom: 20px;
+  .footer__content__section {
+    margin-bottom: 20px;
+
+    > h3 {
+      @extend .text-title--small;
+    }
+
+    > div {
+      @extend .text-paragraph-small;
+    }
+
+    p {
+      @extend .pointer;
+    }
+  }
+
+  .social-media {
+    @include flex(row, space-around);
+
+    img {
+      width: 50px;
+      margin: 20px 10px 0px;
+      @extend .pointer;
+    }
+  }
 }
 
 // +++WORKS STYLE+++

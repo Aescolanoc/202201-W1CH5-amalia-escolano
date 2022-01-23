@@ -18,6 +18,10 @@ h1.title-panic {
   display: none;
 }
 
+.pointer, footer .social-media img, footer .footer__content__section p {
+  cursor: pointer;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -37,7 +41,11 @@ h1.title-panic {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+}
+.menu-mobile .burguer {
+  width: 32px;
+  height: auto;
+  margin: 5px 5px 0px;
 }
 
 .burguer,
@@ -77,12 +85,25 @@ h1.title-panic {
   font-size: 23px;
 }
 
-.text-paragraph, .main-content__title-images h3 {
+.text-paragraph, .main-content__title-images > h3 {
   padding: 18px;
   text-align: center;
   letter-spacing: 4px;
   font-size: 12px;
   line-height: 30px;
+}
+
+.text-title--small, footer .footer__content__section > h3 {
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 15px;
+}
+
+.text-paragraph-small, footer .footer__content__section > div, footer .footer__header > p {
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 12px;
+  line-height: 20px;
 }
 
 .uppercase {
@@ -96,7 +117,7 @@ h1.title-panic {
 .main-content__title-images {
   text-align: center;
 }
-.main-content__title-images h3 {
+.main-content__title-images > h3 {
   text-decoration: underline;
   padding-top: 0px;
 }
@@ -147,10 +168,10 @@ footer .footer__header {
 }
 footer .paragraph-footer {
   color: #15ffbc;
-  font-size: 18px;
 }
 footer .text--active {
-  text-decoration: line-through #ed93ab;
+  text-decoration: line-through solid #ed93ab;
+  -webkit-text-decoration: line-through solid #ed93ab;
 }
 footer .color--hover {
   color: #ed93ab;
@@ -158,11 +179,19 @@ footer .color--hover {
 footer .footer__menu-mobile {
   text-align: center;
   list-style-type: none;
+  margin: 20px 0px 40px 0px;
+}
+footer .footer__content__section {
   margin-bottom: 20px;
 }
-
-.footer__content__section {
-  margin-bottom: 20px;
+footer .social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .social-media img {
+  width: 50px;
+  margin: 20px 10px 0px;
 }
 
 .works__picture8 {
