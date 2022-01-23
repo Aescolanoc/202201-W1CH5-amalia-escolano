@@ -12,19 +12,18 @@
     />
     <title>Home - Panic</title>
     <link rel="shortcut icon" href="./logo32.png" type="image/x-icon" />
-    <script
-      src="https://kit.fontawesome.com/6d85376087.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
   <body>
     <header>
       <nav class="menu-mobile">
-        <a href="#footer" class="menu-mobile__nav-menu burguer">
-          <i class="burger fas fa-bars"></i>
-        </a>
+        <a href="#footer"
+          ><img
+            src="/images/home/media/burguer_small.png"
+            alt="Ir a Menu"
+            class="menu-mobile__nav-menu burguer"
+        /></a>
+
         <span class="menu-mobile__item">Qui</span>
       </nav>
       <h1 class="title-panic">Panic</h1>
@@ -44,48 +43,120 @@
         </ul>
       </nav>
     </header>
-    <main class="main-content">
-      <div class="main-video">
+    <main class="main">
+      <!-- <div class="main-content__video"> 
+      <video
+        class="video-desktop"
+        src="./images/home/media/mp4.mp4"
+        autoplay
+        muted
+        loop
+      ></video> -->
+      <section class="main-video">
         <img src="./images/home/media/play.png" alt="Ver video" />
         <div class="main-video-text">
           <span>Lorem</span>
           <span>Lorem</span>
         </div>
-      </div>
-      <h2 class="main-content__title text-title">Lorem ipsum dolor sit</h2>
-      <p class="main-content__title__quote text-paragraph">
+      </section>
+      <h2 class="main-content__title text-title uppercase">
+        Lorem ipsum dolor sit
+      </h2>
+      <p class="main-content__title__quote text-paragraph uppercase">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna
       </p>
       <p class="text-center">x</p>
-      <div class="main-content__title-images">
+      <section class="main-content__title-images">
         <img
           src="./images/home/media/curl.png"
           alt="linea ondulada"
           class="main-content__title-images__separator"
         />
-        <h2 class="text-title">Lorem ipsum</h2>
-        <h3>dolor sit</h3>
-      </div>
-      <div class="main-content__imagegrid">
+        <h2 class="text-title uppercase">Lorem ipsum</h2>
+        <h3 class="uppercase">dolor sit</h3>
+      </section>
+      <section class="main-content__imagegrid">
         <div>
-          <div class="imagegrid__picture picture1"></div>
+          <div class="imagegrid__picture picture8"></div>
           <p class="text-center">Lorem ipsum dolor sit amet.</p>
         </div>
         <div>
-          <div class="imagegrid__picture picture2"></div>
+          <div class="imagegrid__picture picture9"></div>
           <p class="text-center">Lorem ipsum dolor sit amet, consectur</p>
         </div>
         <div>
-          <div class="imagegrid__picture picture3"></div>
+          <div class="imagegrid__picture picture10"></div>
           <p class="text-center">Lorem ipsum</p>
         </div>
-      </div>
+      </section>
     </main>
     <footer id="footer">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
+      <div class="footer__header">
+        <h3>Lorem <span class="text--active">ipsum</span> dolor</h3>
+        <p>x</p>
+      </div>
+      <ul class="footer__menu-mobile">
+        <li class="text--active color--hover"><span>Home</span></li>
+        <li>Works</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      <div class="footer__content">
+        <section class="footer__content__section text-center">
+          <h3>Lorem ipsum</h3>
+          <div class="text-paragraph">
+            <p class="paragraph-footer">dolor</p>
+            <p class="paragraph-footer">sit amet, consectetur</p>
+          </div>
+          <h3>Lorem ipsum</h3>
+          <div class="text-paragraph">
+            <p class="paragraph-footer">ipsum dolor sit</p>
+            <p class="paragraph-footer">amet, consectetur</p>
+          </div>
+        </section>
+        <section class="footer__content__section text-center">
+          <h3>Lorem ipsum</h3>
+          <div class="social-media">
+            <div>
+              <img
+                src="/images/home/media/social-facebook.png"
+                alt="facebook"
+              />
+            </div>
+            <div>
+              <img
+                src="/images/home/media/social-instagram.png"
+                alt="instagram"
+              />
+            </div>
+            <div>
+              <img src="/images/home/media/social-vimeo.png" alt="vimeo" />
+            </div>
+          </div>
+        </section>
+        <section class="footer__content__section text-center">
+          <h3>Lorem ipsum</h3>
+          <div class="text-paragraph">
+            <p class="paragraph-footer">dolor</p>
+            <p class="paragraph-footer">sit amet</p>
+            <p class="paragraph-footer">consectetur</p>
+          </div>
+
+          <h3>Lorem ipsum</h3>
+          <div class="text-paragraph">
+            <p class="paragraph-footer">dolor</p>
+            <p class="paragraph-footer">sit amet</p>
+            <p class="paragraph-footer">consectetur</p>
+          </div>
+          <h3>Lorem ipsum</h3>
+          <div class="text-paragraph">
+            <p class="paragraph-footer">dolor</p>
+            <p class="paragraph-footer">sit amet</p>
+            <p class="paragraph-footer">consectetur</p>
+          </div>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
