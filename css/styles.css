@@ -350,7 +350,8 @@ footer .social-media img {
   }
   .main-content-works .imagegrid__picture {
     flex-flow: row wrap;
-    width: 33.33%;
+    width: 33.33vw;
+    height: 16.66vh;
   }
 
   footer .footer__menu-mobile {
