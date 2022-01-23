@@ -124,6 +124,10 @@ h1.title-panic {
   text-align: center;
 }
 
+.width-desktop {
+  width: 33.33%;
+}
+
 // ++++MAIN++++
 .main-content__title-images {
   text-align: center;
@@ -141,6 +145,7 @@ h1.title-panic {
 }
 
 .main-content__imagegrid {
+  @include flex(column, center);
   p {
     padding: 10px 20px;
   }
@@ -240,17 +245,33 @@ footer {
   }
 }
 
-// +++MEDIA QUERIES+++
+// ++++ Media Query for mobile ++++
 @media (max-width: 600px) {
   .header-desktop__menu {
     visibility: hidden;
   }
 }
 
+// ++++ Media Query for Desktop ++++
 @media (min-width: 600px) {
   .menu-mobile {
     visibility: hidden;
   }
+
+  .main-content__imagegrid {
+    @include flex(row, center);
+
+    > div {
+      width: 33.33vw;
+    }
+
+    .imagegrid__picture {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
   footer {
     .footer__menu-mobile {
       display: none;

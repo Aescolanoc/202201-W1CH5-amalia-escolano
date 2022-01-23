@@ -114,6 +114,10 @@ h1.title-panic {
   text-align: center;
 }
 
+.width-desktop {
+  width: 33.33%;
+}
+
 .main-content__title-images {
   text-align: center;
 }
@@ -127,6 +131,11 @@ h1.title-panic {
   height: auto;
 }
 
+.main-content__imagegrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .main-content__imagegrid p {
   padding: 10px 20px;
 }
@@ -310,6 +319,20 @@ footer .social-media img {
 @media (min-width: 600px) {
   .menu-mobile {
     visibility: hidden;
+  }
+
+  .main-content__imagegrid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .main-content__imagegrid > div {
+    width: 33.33vw;
+  }
+  .main-content__imagegrid .imagegrid__picture {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   footer .footer__menu-mobile {
