@@ -24,12 +24,8 @@ body {
   letter-spacing: 2px;
 }
 
-header {
-  height: 120px;
-
-  h1.title-panic {
-    display: none;
-  }
+h1.title-panic {
+  display: none;
 }
 
 .header {
@@ -48,13 +44,14 @@ header {
   }
 }
 
+.menu-mobile {
+  @include flex(row, space-between);
+  align-items: flex-start;
+}
+
 .burguer,
 .menu-mobile__item {
   margin: 20px 20px 2px 20px;
-}
-
-.menu-mobile {
-  @include flex(row, space-between);
 }
 
 // *MAIN*
@@ -146,34 +143,46 @@ header {
 
 // ++++FOOTER++++
 footer {
-  @include flex(column, space-between);
-  align-items: center;
   background-color: $colorfooter;
   color: white;
 
-  .footer__header {
+  .footer__content {
     @include flex(column, space-between);
+    align-items: center;
+  }
+
+  .footer__header {
     @extend .text-center;
     @extend .text-title;
-    height: 100px;
     color: $colorgreen;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 40px;
     margin-top: 20px;
+    text-align: center;
+  }
+
+  .paragraph-footer {
+    color: $colorgreen;
+    font-size: 18px;
   }
 
   .text--active {
-    text-decoration-color: $colorhover;
+    text-decoration: line-through $colorhover;
   }
 
   .color--hover {
     color: $colorhover;
   }
 
-  .footer__menu {
+  .footer__menu-mobile {
     text-align: center;
     list-style-type: none;
+    margin-bottom: 20px;
   }
+}
+
+.footer__content__section {
+  margin-bottom: 20px;
 }
 
 // +++WORKS STYLE+++
@@ -191,14 +200,20 @@ footer {
 }
 
 @media (min-width: 600px) {
-  .menu-mobile {
-    visibility: hidden;
-  }
-  .footer__menu {
-    display: none;
-  }
-  .footer__content {
-    @include flex(row, space-between);
-    width: 100%;
+  footer {
+    .menu-mobile {
+      visibility: hidden;
+    }
+    .footer__menu-mobile {
+      display: none;
+    }
+    .footer__content {
+      @include flex(row, space-between);
+      align-items: flex-start;
+
+      .footer__content__section {
+        width: 33.33%;
+      }
+    }
   }
 }
