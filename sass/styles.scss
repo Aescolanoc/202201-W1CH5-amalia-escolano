@@ -248,6 +248,10 @@ footer {
     text-align: center;
     list-style-type: none;
     margin: 20px 0px 40px 0px;
+    li a:not(.color--hover) {
+      color: white;
+      text-decoration: none;
+    }
   }
 
   .footer__content__section {
