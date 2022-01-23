@@ -307,7 +307,6 @@ footer .footer__header {
   color: #15ffbc;
   font-size: 14px;
   line-height: 40px;
-  margin-top: 20px;
   text-align: center;
 }
 footer .paragraph-footer {
@@ -345,6 +344,10 @@ footer .social-media img {
 
   .hidden-mobile {
     display: none;
+  }
+
+  .about-section__content {
+    padding-bottom: 20px;
   }
 }
 @media (min-width: 600px) {
@@ -400,7 +403,7 @@ footer .social-media img {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 0px 40px;
+    padding: 0px 40px 20px;
   }
   .main-about .about-section .about-section__content .content__section {
     width: 25%;

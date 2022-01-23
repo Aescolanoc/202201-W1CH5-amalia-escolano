@@ -224,7 +224,6 @@ footer {
     color: $colorgreen;
     font-size: 14px;
     line-height: 40px;
-    margin-top: 20px;
     text-align: center;
 
     & > p {
@@ -287,6 +286,10 @@ footer {
   .hidden-mobile {
     display: none;
   }
+
+  .about-section__content {
+    padding-bottom: 20px;
+  }
 }
 
 // ++++ Media Query for Desktop ++++
@@ -343,7 +346,7 @@ footer {
 
       .about-section__content {
         @include flex(row, center);
-        padding: 0px 40px;
+        padding: 0px 40px 20px;
 
         .content__section {
           width: 25%;
