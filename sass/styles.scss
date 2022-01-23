@@ -324,11 +324,21 @@ footer {
     .main-about__picture {
       display: block;
     }
-    .about-content {
-      @include flex(row, center);
 
-      .about-content__section {
-        width: 25%;
+    .about-section {
+      .about-section__header {
+        width: 100vw;
+        margin: 80px 0px 0px;
+        padding: 0px 40px 0px;
+      }
+
+      .about-section__content {
+        @include flex(row, center);
+        padding: 0px 40px;
+
+        .content__section {
+          width: 25%;
+        }
       }
     }
   }
@@ -340,10 +350,6 @@ footer {
     .footer__content {
       @include flex(row, space-between);
       align-items: flex-start;
-
-      .about-content__section-header {
-        width: 80vw;
-      }
 
       .footer__content__section {
         width: 33.33vw;

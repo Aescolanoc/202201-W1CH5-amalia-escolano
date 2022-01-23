@@ -384,12 +384,18 @@ footer .social-media img {
   .main-about .main-about__picture {
     display: block;
   }
-  .main-about .about-content {
+  .main-about .about-section .about-section__header {
+    width: 100vw;
+    margin: 80px 0px 0px;
+    padding: 0px 40px 0px;
+  }
+  .main-about .about-section .about-section__content {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 0px 40px;
   }
-  .main-about .about-content .about-content__section {
+  .main-about .about-section .about-section__content .content__section {
     width: 25%;
   }
 
@@ -401,9 +407,6 @@ footer .social-media img {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-  }
-  footer .footer__content .about-content__section-header {
-    width: 80vw;
   }
   footer .footer__content .footer__content__section {
     width: 33.33vw;
