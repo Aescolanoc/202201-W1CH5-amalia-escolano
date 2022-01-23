@@ -21,7 +21,6 @@ html {
 body {
   background-color: $colorgreen;
   font-family: "Open Sans", sans-serif;
-  letter-spacing: 2px;
 }
 
 h1.title-panic {
@@ -65,7 +64,7 @@ h1.title-panic {
 
 // *MAIN*
 
-.main-video {
+.main-content__picture {
   margin-bottom: 30px;
   @include flex(column, center);
   align-items: center;
@@ -76,15 +75,6 @@ h1.title-panic {
   background-position: center;
   height: 50vw;
   color: $colorgreen;
-
-  .main-content__video {
-    display: inline-block;
-  }
-}
-
-.main-video-text {
-  @include flex(column, center);
-  padding: 20px;
 }
 
 // *class generics to use*
@@ -129,6 +119,11 @@ h1.title-panic {
 }
 
 // ++++MAIN++++
+.main-content__video {
+  .video-desktop {
+    width: 100%;
+  }
+}
 .main-content__title-images {
   text-align: center;
 
@@ -288,10 +283,18 @@ footer {
   .header-desktop__menu {
     visibility: hidden;
   }
+
+  .hidden-mobile {
+    display: none;
+  }
 }
 
 // ++++ Media Query for Desktop ++++
 @media (min-width: 600px) {
+  .hidden-desktop {
+    display: none;
+  }
+
   .menu-mobile {
     visibility: hidden;
   }
@@ -300,13 +303,14 @@ footer {
     @include flex(row, center);
 
     > div {
-      width: 33.33vw;
+      width: 33.33%;
     }
 
     .imagegrid__picture {
-      background-size: cover;
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
+      height: 33vw;
     }
   }
 
@@ -316,8 +320,8 @@ footer {
 
     .imagegrid__picture {
       flex-flow: row wrap;
-      width: 33.33vw;
-      height: 16.66vh;
+      width: 33.33%;
+      height: 16.66vw;
     }
   }
   .main-about {
@@ -352,7 +356,7 @@ footer {
       align-items: flex-start;
 
       .footer__content__section {
-        width: 33.33vw;
+        width: 33.33%;
       }
     }
   }
