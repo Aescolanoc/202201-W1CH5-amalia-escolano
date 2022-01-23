@@ -180,6 +180,36 @@ h1.title-panic {
   @include flex(column, center);
 }
 
+// ++++ABOUT STYLE++++
+.main-about {
+  .main-about__picture {
+    display: none;
+    background-image: url(/images/about/media1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vw;
+  }
+
+  section {
+    margin-top: 80px;
+  }
+
+  h3 {
+    @extend .text-title--small;
+    margin-bottom: 30px;
+  }
+  p {
+    @extend .text-paragraph-small;
+    padding: 0px 25px;
+
+    span {
+      font-size: 16px;
+      vertical-align: bottom;
+    }
+  }
+}
+
 // ++++FOOTER++++
 footer {
   background-color: $colorfooter;
@@ -286,6 +316,9 @@ footer {
       width: 33.33vw;
       height: 16.66vh;
     }
+  }
+  .main-about.main-about__picture {
+    display: block;
   }
 
   footer {

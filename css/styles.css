@@ -93,13 +93,13 @@ h1.title-panic {
   line-height: 30px;
 }
 
-.text-title--small, footer .footer__content__section > h3 {
+.text-title--small, footer .footer__content__section > h3, .main-about h3 {
   text-align: center;
   letter-spacing: 4px;
   font-size: 15px;
 }
 
-.text-paragraph-small, footer .footer__content__section > div, footer .footer__header > p {
+.text-paragraph-small, footer .footer__content__section > div, footer .footer__header > p, .main-about p {
   text-align: center;
   letter-spacing: 4px;
   font-size: 12px;
@@ -273,6 +273,28 @@ h1.title-panic {
   justify-content: center;
 }
 
+.main-about .main-about__picture {
+  display: none;
+  background-image: url(/images/about/media1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vw;
+}
+.main-about section {
+  margin-top: 80px;
+}
+.main-about h3 {
+  margin-bottom: 30px;
+}
+.main-about p {
+  padding: 0px 25px;
+}
+.main-about p span {
+  font-size: 16px;
+  vertical-align: bottom;
+}
+
 footer {
   background-color: #070c14;
   color: white;
@@ -352,6 +374,10 @@ footer .social-media img {
     flex-flow: row wrap;
     width: 33.33vw;
     height: 16.66vh;
+  }
+
+  .main-about.main-about__picture {
+    display: block;
   }
 
   footer .footer__menu-mobile {
