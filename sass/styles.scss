@@ -190,6 +190,9 @@ h1.title-panic {
     background-position: center;
     height: 50vw;
   }
+  .about-content {
+    @include flex(column, center);
+  }
 
   section {
     margin-top: 80px;
@@ -317,8 +320,17 @@ footer {
       height: 16.66vh;
     }
   }
-  .main-about.main-about__picture {
-    display: block;
+  .main-about {
+    .main-about__picture {
+      display: block;
+    }
+    .about-content {
+      @include flex(row, center);
+
+      .about-content__section {
+        width: 25%;
+      }
+    }
   }
 
   footer {
@@ -329,8 +341,12 @@ footer {
       @include flex(row, space-between);
       align-items: flex-start;
 
+      .about-content__section-header {
+        width: 80vw;
+      }
+
       .footer__content__section {
-        width: 33.33%;
+        width: 33.33vw;
       }
     }
   }

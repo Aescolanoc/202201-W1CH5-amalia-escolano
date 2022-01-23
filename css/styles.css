@@ -281,6 +281,11 @@ h1.title-panic {
   background-position: center;
   height: 50vw;
 }
+.main-about .about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .main-about section {
   margin-top: 80px;
 }
@@ -376,8 +381,16 @@ footer .social-media img {
     height: 16.66vh;
   }
 
-  .main-about.main-about__picture {
+  .main-about .main-about__picture {
     display: block;
+  }
+  .main-about .about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .main-about .about-content .about-content__section {
+    width: 25%;
   }
 
   footer .footer__menu-mobile {
@@ -389,8 +402,11 @@ footer .social-media img {
     justify-content: space-between;
     align-items: flex-start;
   }
+  footer .footer__content .about-content__section-header {
+    width: 80vw;
+  }
   footer .footer__content .footer__content__section {
-    width: 33.33%;
+    width: 33.33vw;
   }
 }
 
