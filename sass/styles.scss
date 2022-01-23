@@ -299,6 +299,12 @@ footer {
     visibility: hidden;
   }
 
+  .main-content__title,
+  .main-content__title__quote {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
   .main-content__imagegrid {
     @include flex(row, center);
 
@@ -331,9 +337,8 @@ footer {
 
     .about-section {
       .about-section__header {
-        width: 100vw;
-        margin: 80px 0px 0px;
-        padding: 0px 40px 0px;
+        width: 75%;
+        margin: 20px auto 0px;
       }
 
       .about-section__content {
