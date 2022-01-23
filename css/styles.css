@@ -324,6 +324,10 @@ footer .footer__menu-mobile {
   list-style-type: none;
   margin: 20px 0px 40px 0px;
 }
+footer .footer__menu-mobile li a:not(.color--hover) {
+  color: white;
+  text-decoration: none;
+}
 footer .footer__content__section {
   margin-bottom: 20px;
 }
