@@ -248,10 +248,10 @@ footer {
 }
 
 @media (min-width: 600px) {
+  .menu-mobile {
+    visibility: hidden;
+  }
   footer {
-    .menu-mobile {
-      visibility: hidden;
-    }
     .footer__menu-mobile {
       display: none;
     }

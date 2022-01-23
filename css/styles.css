@@ -308,9 +308,10 @@ footer .social-media img {
   }
 }
 @media (min-width: 600px) {
-  footer .menu-mobile {
+  .menu-mobile {
     visibility: hidden;
   }
+
   footer .footer__menu-mobile {
     display: none;
   }
