@@ -154,18 +154,30 @@ h1.title-panic {
     margin-bottom: 60px;
   }
 
-  .imagegrid__picture {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 60vw;
-  }
-
   @for $i from 8 through 10 {
     .picture#{$i} {
       background-image: url("/images/home/media/media#{$i}.jpg");
     }
   }
+}
+
+// ++++ IMAGES HOME & WORKS
+.imagegrid__picture {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60vw;
+}
+
+// +++WORKS STYLE+++
+@for $i from 8 through 34 {
+  .works__picture#{$i} {
+    background-image: url("/images/work/media/media#{$i}.jpg");
+  }
+}
+
+.main-content-works {
+  @include flex(column, center);
 }
 
 // ++++FOOTER++++
@@ -238,13 +250,6 @@ footer {
   }
 }
 
-// +++WORKS STYLE+++
-@for $i from 8 through 34 {
-  .works__picture#{$i} {
-    background-image: url("/images/work/media/media#{$i}.jpg");
-  }
-}
-
 // ++++ Media Query for mobile ++++
 @media (max-width: 600px) {
   .header-desktop__menu {
@@ -269,6 +274,16 @@ footer {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
+    }
+  }
+
+  .main-content-works {
+    @include flex(row, center);
+    flex-wrap: wrap;
+
+    .imagegrid__picture {
+      flex-flow: row wrap;
+      width: 33.33%;
     }
   }
 
