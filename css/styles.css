@@ -35,6 +35,13 @@ h1.title-panic {
   width: 100%;
   gap: 30px;
 }
+.header .header-desktop__menu li a {
+  color: black;
+  text-decoration: none;
+}
+.header .header-desktop__menu li a:hover, .header .header-desktop__menu li a.active {
+  color: #ed93ab;
+}
 
 .menu-mobile {
   display: flex;

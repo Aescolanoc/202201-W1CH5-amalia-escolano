@@ -44,6 +44,14 @@ h1.title-panic {
     align-items: center;
     width: 100%;
     gap: 30px;
+    li a {
+      color: black;
+      text-decoration: none;
+      &:hover,
+      &.active {
+        color: $colorhover;
+      }
+    }
   }
 }
 
