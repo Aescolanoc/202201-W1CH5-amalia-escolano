@@ -32,9 +32,7 @@ h1.title-panic {
 }
 
 .header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  @include flex(row, center);
 
   .header-desktop__menu {
     display: flex;
@@ -86,6 +84,10 @@ h1.title-panic {
 }
 
 // *class generics to use*
+.color--hover {
+  color: $colorhover;
+}
+
 .text-title {
   padding: 18px;
   text-align: center;
@@ -132,6 +134,7 @@ h1.title-panic {
     width: 100%;
   }
 }
+
 .main-content__title-images {
   text-align: center;
 
@@ -140,6 +143,11 @@ h1.title-panic {
     text-decoration: underline;
     padding-top: 0px;
   }
+
+  .text-title--active:hover {
+    @extend .color--hover;
+  }
+
   .main-content__title-images__separator {
     padding-top: 50px;
     width: 50px;
@@ -246,10 +254,6 @@ footer {
   .text--active {
     text-decoration: line-through solid $colorhover;
     -webkit-text-decoration: line-through solid $colorhover;
-  }
-
-  .color--hover {
-    color: $colorhover;
   }
 
   .footer__menu-mobile {

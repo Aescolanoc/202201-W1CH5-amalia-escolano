@@ -74,6 +74,10 @@ h1.title-panic {
   color: #15ffbc;
 }
 
+.color--hover, .main-content__title-images .text-title--active:hover {
+  color: #ed93ab;
+}
+
 .text-title, footer .footer__header {
   padding: 18px;
   text-align: center;
@@ -322,9 +326,6 @@ footer .paragraph-footer {
 footer .text--active {
   text-decoration: line-through solid #ed93ab;
   -webkit-text-decoration: line-through solid #ed93ab;
-}
-footer .color--hover {
-  color: #ed93ab;
 }
 footer .footer__menu-mobile {
   text-align: center;
